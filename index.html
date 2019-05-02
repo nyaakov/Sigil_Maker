@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the Sigil Maker</h1>
+
+    <div class="container">
+        <label>Choose your force</label>
+        <select name="" id="">
+            <option>Kaze</option>
+            <option>Vista</option>
+            <option>Altimi</option>
+            <option>Arsija</option>
+            <option>Thoron</option>
+            <option>Crost</option>
+            <option>Nexat</option>
+            <option>Urania</option>
+            <option>Neptulon</option>
+            <option>Hecate</option>
+            <option>Vis</option>
+            <option>Magnus</option>
+            <option>Ouranos</option>
+            <option>Helion</option>
+            <option>Awen</option>
+
+        </select>
+
+        <label>Set your ratio</label>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="10" value="5" class="slider" id="p1">
+        </div>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="10" value="5" class="slider" id="p2">
+        </div>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="10" value="5" class="slider" id="p3">
+        </div>
+
+        <label>Set your arguments</label>
+        <label>Set your trigger</label>
+        <script src="processing.js"></script> 
+        <canvas data-processing-sources="./SigilMain/SigilTest.pde"></canvas>
+    </div>
+</body>
+
+
+<style>
+
+select {
+    max-width: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  height: 15px;
+  border-radius: 5px;   
+  opacity: .7;
+  background: #d3d3d3;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin: 10px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: rgb(13, 17, 201);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(13, 17, 201);
+  cursor: pointer;
+}</style>
+</html>
